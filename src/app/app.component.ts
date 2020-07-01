@@ -16,7 +16,7 @@ export class AppComponent implements AfterViewInit {
     this.httpClient.get(`/myroute/12345`, {
       responseType: 'blob',
     }).subscribe((result) => {
-      console.log('Anything', result);
+      console.log('Result of the Http Get:', result);
     });
   }
 }
